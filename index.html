@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Animated Design</title>
+	<link href="style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<section>
+		<div style="display: flex; align-items:center; justify-content:between">
+			<div id="animated_border">
+				<a href="#"><span>Button</span></a>
+			</div>
+			<div id="toggle">
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+	</section>
+
+	<section id="animated_button">
+		<ul>
+			<li style="--i:#a955ff;--j:#ea51ff;">
+				<span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+				<span class="title">Home</span>
+			</li>
+			<li style="--i:#56CCF2;--j:#2F80ED;">
+				<span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+				<span class="title">Messages</span>
+			</li>
+			<li style="--i:#FF9966;--j:#FF5E62;">
+				<span class="icon"><ion-icon name="heart-outline"></ion-icon></span>
+				<span class="title">Favourite</span>
+			</li>
+			<li style="--i:#80FF72;--j:#7EE8FA;">
+				<span class="icon"><ion-icon name="videocam-outline"></ion-icon></span>
+				<span class="title">Videos</span>
+			</li>
+			<li style="--i:#ffa9c6;--j:#f434e2;">
+				<span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
+				<span class="title">Photos</span>
+			</li>
+		</ul>
+	</section>
+
+	<section id="outline_button">
+		<ul>
+			<li style="--clr:#1da1f2"><i class="fa fa-twitter"></i></li>
+			<li style="--clr:#dd2a7b"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+			<li style="--clr:#25d366"><i class="fa fa-whatsapp"></i></li>
+			<li style="--clr:#ff0000"><i class="fa fa-youtube-play"></i></li>
+		</ul>
+	</section>
+
+	<section id="water_effect">
+		<div class="content">
+			<h2>Water</h2>
+			<h2>Water</h2>
+		</div>
+	</section>
+
+	<section id="calculator">
+		<form class="calculator" name="calc">
+			<input class="value" type="text" name="txt" readonly />
+			<span class="num clear" onclick="document.calc.txt.value =''">C</span>
+			<span class="num" onclick="document.calc.txt.value +=''">C++</span>
+			<span class="num" onclick="document.calc.txt.value +=''">M+</span>
+			<span class="num" onclick="document.calc.txt.value +=''">M-</span>
+
+			<span class="num" onclick="document.calc.txt.value +=''">^</span>
+			<span class="num" onclick="document.calc.txt.value +='%'">%</span>
+			<span class="num" onclick="document.calc.txt.value +='tan'">tan</span>
+			<span class="num" onclick="document.calc.txt.value +='/'">÷</span>
+
+			<span class="num" onclick="document.calc.txt.value +='7'">7</span>
+			<span class="num" onclick="document.calc.txt.value +='8'">8</span>
+			<span class="num" onclick="document.calc.txt.value +='9'">9</span>
+			<span class="num" onclick="document.calc.txt.value +='*'">×</span>
+
+			<span class="num" onclick="document.calc.txt.value +='4'">4</span>
+			<span class="num" onclick="document.calc.txt.value +='5'">5</span>
+			<span class="num" onclick="document.calc.txt.value +='6'">6</span>
+			<span class="num" onclick="document.calc.txt.value +='-'">-</span>
+
+			<span class="num" onclick="document.calc.txt.value +='1'">1</span>
+			<span class="num" onclick="document.calc.txt.value +='2'">2</span>
+			<span class="num" onclick="document.calc.txt.value +='3'">3</span>
+			<span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
+
+			<span class="num" onclick="document.calc.txt.value +='.'">.</span>
+			<span class="num" onclick="document.calc.txt.value +='0'">0</span>
+			<span class="num" onclick="document.calc.txt.value +='00'">00</span>
+			<span class="num equal" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
+		</form>
+	</section>
+
+	<section id="glass_effect">
+		<div class="container">
+			<div class="card">
+				<div class="imgBx">
+					<img src="download.jpeg" alt="Picture">
+				</div>
+				<div class="content">
+					<div class="contentBx">
+						<h3>
+							D M A <br> <span>full-stack web developer</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <section id="circle_nav">
+		<div class="menu">
+			<input type="checkbox" id="toggle" />
+			<label for="toggle" id="show-menu">
+				<div class="btn">
+					<i class="material-icons md-36 toggleBtn menuBtn">menu</i><i class="material-icons md-36 toggleBtn closeBtn">close</i>
+				</div>
+				<div class="btn"><a href=""><i class="material-icons md-36">photo_camera</i></a></div>
+				<div class="btn"><i class="material-icons md-36">photo</i></div>
+				<div class="btn"><i class="material-icons md-36">music_note</i></div>
+				<div class="btn"><i class="material-icons md-36">settings</i></div>
+				<div class="btn"><i class="material-icons md-36">phone</i></div>
+				<div class="btn"><i class="material-icons md-36">cloud</i></div>
+				<div class="btn"><i class="material-icons md-36">videocam</i></div>
+				<div class="btn"><i class="material-icons md-36">chat_bubble</i></div>
+			</label>
+		</div>
+	</section> -->
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
